@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  /* width: 100vw; */
+}
+
+/* .content {
+  height: 100%;
+}
+
+.footer {
+  margin-top: 15%;
+} */
+
+/* .g-card {
+  margin: 20px;
+} */
+
+.g-card-img {
+  border-radius: 10px;
+  width: 350px;
+  height: 380px;
+  box-shadow: 0 0 3px 1px #ccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.g-card-info {
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.g-card-title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.g-card-subtitle {
+  font-size: 16px;
+  margin: 0px;
+}
+
+/* -----Flip Card. Refactor later--- */
+
+.flip-card-container {
+  width: 470px;
+  height: 300px;
+
+  perspective: 1000px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.flip-card {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.flip-card-container:hover .flip-card {
+  transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+}
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 0.5rem; */
+}
+.flip-card-front {
+  background-color: #2980b9;
+}
+.flip-card-back {
+  /* background: rgb(53, 52, 52); */
+  background: linear-gradient(
+    45deg,
+    #ffcc5c 20%,
+    #3c3c3c 20% 50%,
+    #ff6f69 50% 80%,
+    #96ceb4 80%
+  );
+
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 0.5rem; */
+}
+.flip-card-back p {
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+.flip-card-back p span {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 1.25rem;
+}
+
+/* .separating-div {
+  height: 50px;
+} */
+
+.g-card-info p {
+  /* background: black; */
+  /* height: 300px;
+  width: 350px; */
+  text-shadow: -1px 0 1px black, 0 1px 1px black, 1px 0 1px black,
+    0 -1px 1px black;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.g-card-info p a {
+  padding: 3px 20px 3px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  /* border: 1px solid black;
+  border-radius: 5px; */
+  font-size: 130%;
+  color: #179deb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.footer-logo a:link,
+.footer-logo a:visited {
+  text-decoration: none;
+  font-size: 160%;
+  color: #eb4a35;
+  display: block;
+  margin: 0 5px;
+}
+
+.footer-logo p {
+  display: block;
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+}
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}
+
+#linkedin:hover {
+  color: #007bb5;
+}
+
+#github:hover {
+  color: #000000;
+}
+
+#linkedin,
+#github {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+
+.aboutme {
+  /* width: 100vw; */
+  height: 70vh;
+}
+
+.aboutmetext {
+  font-size: 110%;
+}
+.pdfviewer {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin: 40px 25% 0 25%;
+  justify-content: center;
+  align-content: center;
+}
