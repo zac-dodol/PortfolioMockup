@@ -10,11 +10,11 @@ function Footer(props) {
             <Container fluid={true}>
                 <Row className="border-top justify-content-between p-3 footer-logo">
                     <Col className="p-0" md={3} sm={12}>
-                        <p>Contact @ akmalhazimothman@gmail.com</p>
+                        <p>akmalhazimothman@gmail.com</p>
                     </Col>
                     <Col className="p-0 d-flex justify-content-end " md={3} sm={12}>
 
-                        <a target='_blank' href="www.linkedin.com/in/akmal-hazim-othman-619002145"><ion-icon id="linkedin" name="logo-linkedin" className="icon-big"></ion-icon></a>
+                        <a target='_blank' href="https://linkedin.com/in/akmal-hazim-othman-619002145"><ion-icon id="linkedin" name="logo-linkedin" className="icon-big"></ion-icon></a>
 
                         <a href="https://github.com/zac-dodol"
                         ><ion-icon name="logo-github" id="github" className="icon-big"></ion-icon

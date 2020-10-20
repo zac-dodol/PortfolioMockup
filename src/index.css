@@ -105,10 +105,10 @@ body {
   /* background: rgb(53, 52, 52); */
   background: linear-gradient(
     45deg,
-    #ffcc5c 20%,
-    #3c3c3c 20% 50%,
-    #ff6f69 50% 80%,
-    #96ceb4 80%
+    /* #ffcc5c 20%, */
+    #3c3c3c 0% 50%,
+    #ff6f69 50% 100%
+    /* #96ceb4 80% */
   );
 
   transform: rotateY(180deg);
@@ -215,7 +215,7 @@ body {
 
 .aboutme {
   /* width: 100vw; */
-  height: 70vh;
+  height: 110vh;
 }
 
 .aboutmetext {
